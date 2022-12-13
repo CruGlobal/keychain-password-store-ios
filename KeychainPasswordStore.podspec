@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
     s.summary          = 'Implements Security Framework for storing passwords in a device keychain.'
   
   
-    s.description      = 'Implements Security Framework for storing passwords in a device keychain.'
+    s.description      = 'This module implements the Security Framework for storing generic passwords in the device keychain.  Passwords are stored as kSecClassGenericPassword and keyed with an account and service for searching stored passwords.'
   
     s.homepage         = 'https://github.com/CruGlobal/keychain-password-store-ios'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
