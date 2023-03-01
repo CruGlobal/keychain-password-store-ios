@@ -32,4 +32,4 @@ jobs:
       run: xcodebuild -resolvePackageDependencies -project ./Example/Example.xcodeproj -scheme Example
     
     - name: Run Tests
-      run: xcodebuild test -project ./Example/Example.xcodeproj -scheme Example -destination 'platform=iOS,name=iPhone'
+      run: xcodebuild test -project ./Example/Example.xcodeproj -scheme Example -destination 'platform=iOS Simulator,name=iPhone 11,OS=15.0'
