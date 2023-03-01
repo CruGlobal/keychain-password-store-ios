@@ -33,5 +33,5 @@ jobs:
       with:
         project: Example/Example.xcodeproj
         scheme: Example
-        destination: platform=iOS
+        destination: "platform=iOS Simulator,name=iPhone 11"
         action: test
