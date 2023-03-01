@@ -309,6 +309,7 @@
 /* Begin PBXTargetDependency section */
 		452A586E29A96D1F00D22E28 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 452A585A29A96D1E00D22E28 /* Example */;
 			targetProxy = 452A586D29A96D1F00D22E28 /* PBXContainerItemProxy */;
 		};
