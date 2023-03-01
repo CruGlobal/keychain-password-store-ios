@@ -26,7 +26,7 @@ jobs:
     - name: Select Xcode Version
       uses: maxim-lobanov/setup-xcode@v1
       with:
-        xcode-version: '13.4.1'
+        xcode-version: '14.2'
 
     - name: Run tests
       uses: sersoft-gmbh/xcodebuild-action@v2
