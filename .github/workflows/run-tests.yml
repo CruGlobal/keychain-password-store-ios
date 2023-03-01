@@ -26,4 +26,4 @@ jobs:
         xcode-version: '13.4.1'
         
     - name: Run tests
-      run: xcodebuild test -scheme Example -project Example.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.0' | xcpretty && exit ${PIPESTATUS[0]}
+      run: xcodebuild test -scheme Example -project ../Example/Example.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.0' | xcpretty && exit ${PIPESTATUS[0]}
