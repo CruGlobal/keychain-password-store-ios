@@ -29,4 +29,4 @@ jobs:
         xcode-version: '13.4.1'
 
     - name: Build
-        run: xcodebuild -resolvePackageDependencies -project ./Example/Example.xcodeproj -scheme Example
+      run: xcodebuild -resolvePackageDependencies -project ./Example/Example.xcodeproj -scheme Example
