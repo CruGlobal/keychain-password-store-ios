@@ -31,7 +31,7 @@ jobs:
     - name: Run tests
       uses: sersoft-gmbh/xcodebuild-action@v2
       with:
-        project: Example.xcodeproj
+        project: Example/Example.xcodeproj
         scheme: Example
         destination: platform=macOS
         action: test
