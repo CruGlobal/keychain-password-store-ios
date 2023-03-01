@@ -33,5 +33,5 @@ jobs:
       with:
         project: Example/Example.xcodeproj
         scheme: Example
-        destination: platform=macOS
+        destination: platform=iOS
         action: test
