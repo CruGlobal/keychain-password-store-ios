@@ -11,7 +11,6 @@
 		452A586129A96D1E00D22E28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A586029A96D1E00D22E28 /* ContentView.swift */; };
 		452A586329A96D1F00D22E28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 452A586229A96D1F00D22E28 /* Assets.xcassets */; };
 		452A586729A96D1F00D22E28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 452A586629A96D1F00D22E28 /* Preview Assets.xcassets */; };
-		452A587129A96D1F00D22E28 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A587029A96D1F00D22E28 /* ExampleTests.swift */; };
 		452A587B29A96D1F00D22E28 /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A587A29A96D1F00D22E28 /* ExampleUITests.swift */; };
 		452A587D29A96D1F00D22E28 /* ExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A587C29A96D1F00D22E28 /* ExampleUITestsLaunchTests.swift */; };
 		452A588D29A96E9900D22E28 /* KeychainPasswordStore in Frameworks */ = {isa = PBXBuildFile; productRef = 452A588C29A96E9900D22E28 /* KeychainPasswordStore */; };
@@ -43,7 +42,6 @@
 		452A586429A96D1F00D22E28 /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
 		452A586629A96D1F00D22E28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		452A586C29A96D1F00D22E28 /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		452A587029A96D1F00D22E28 /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
 		452A587629A96D1F00D22E28 /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		452A587A29A96D1F00D22E28 /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		452A587C29A96D1F00D22E28 /* ExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 		452A586F29A96D1F00D22E28 /* ExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				452A587029A96D1F00D22E28 /* ExampleTests.swift */,
 				452A588E29A96EF000D22E28 /* KeychainPasswordStoreTests.swift */,
 			);
 			path = ExampleTests;
@@ -295,7 +292,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				452A588F29A96EF000D22E28 /* KeychainPasswordStoreTests.swift in Sources */,
-				452A587129A96D1F00D22E28 /* ExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
