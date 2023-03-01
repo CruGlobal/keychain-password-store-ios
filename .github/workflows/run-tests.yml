@@ -28,7 +28,8 @@ jobs:
       with:
         xcode-version: '13.4.1'
 
-    - name: Build
+    - name: Resolve Package Dependencies
       run: xcodebuild -resolvePackageDependencies -project ./Example/Example.xcodeproj -scheme Example
-      run: xcodebuild -showBuildSettings -project ./Example/Example.xcodeproj -scheme Example
+    
+    - name: Run Tests
       run: xcodebuild test -project ./Example/Example.xcodeproj -scheme Example -destination 'platform=iOS,name=iPhone'
