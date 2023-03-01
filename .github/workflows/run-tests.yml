@@ -30,6 +30,9 @@ jobs:
 
     - name: Resolve Package Dependencies
       run: xcodebuild -resolvePackageDependencies -project ./Example/Example.xcodeproj -scheme Example
+
+    - name: Build
+      run: xcodebuild build-for-testing -project ./Example/Example.xcodeproj -scheme Example -destination 'platform=iOS Simulator,name=iPhone 11,OS=15.5'
     
     - name: Run Tests
       run: xcodebuild test -project ./Example/Example.xcodeproj -scheme Example -destination 'platform=iOS Simulator,name=iPhone 11,OS=15.5'
