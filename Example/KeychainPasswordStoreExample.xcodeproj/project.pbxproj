@@ -590,7 +590,7 @@
 				4581830029AFDE040075E256 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4581830129AFDE040075E256 /* Build configuration list for PBXNativeTarget "KeychainPasswordStoreExample" */ = {
 			isa = XCConfigurationList;
@@ -599,7 +599,7 @@
 				4581830329AFDE040075E256 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4581830429AFDE040075E256 /* Build configuration list for PBXNativeTarget "KeychainPasswordStoreExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -608,7 +608,7 @@
 				4581830629AFDE040075E256 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4581830729AFDE040075E256 /* Build configuration list for PBXNativeTarget "KeychainPasswordStoreExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -617,7 +617,7 @@
 				4581830929AFDE040075E256 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 
