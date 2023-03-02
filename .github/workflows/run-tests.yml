@@ -32,8 +32,5 @@ jobs:
     - name: Resolve Package Dependencies
       run: xcodebuild -resolvePackageDependencies -project ./Example/KeychainPasswordStoreExample.xcodeproj -scheme KeychainPasswordStoreExample
 
-    - name: Build
-      run: xcodebuild build-for-testing -project ./Example/KeychainPasswordStoreExample.xcodeproj -scheme KeychainPasswordStoreExample -destination 'platform=iOS Simulator,name=iPhone 11,OS=15.5'
-    
     - name: Run Tests
-      run: xcodebuild test -project ./Example/KeychainPasswordStoreExample.xcodeproj -scheme KeychainPasswordStoreExample -destination 'platform=iOS Simulator,name=iPhone 11,OS=15.5'
+      run: xcodebuild test -project ./Example/KeychainPasswordStoreExample.xcodeproj -scheme KeychainPasswordStoreExample -destination 'platform=iOS Simulator,name=iPhone 11,OS=15.5' | xcpretty && exit ${PIPESTATUS[0]}
