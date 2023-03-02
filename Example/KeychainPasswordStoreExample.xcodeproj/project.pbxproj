@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		458182E029AFDE030075E256 /* KeychainPasswordStoreExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458182DF29AFDE030075E256 /* KeychainPasswordStoreExampleApp.swift */; };
+		458182E429AFDE040075E256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 458182E329AFDE040075E256 /* Assets.xcassets */; };
+		458182E829AFDE040075E256 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 458182E729AFDE040075E256 /* Preview Assets.xcassets */; };
+		458182FC29AFDE040075E256 /* KeychainPasswordStoreExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458182FB29AFDE040075E256 /* KeychainPasswordStoreExampleUITests.swift */; };
+		458182FE29AFDE040075E256 /* KeychainPasswordStoreExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458182FD29AFDE040075E256 /* KeychainPasswordStoreExampleUITestsLaunchTests.swift */; };
+		4581830B29B0E72C0075E256 /* KeychainPasswordStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581830A29B0E72C0075E256 /* KeychainPasswordStoreTests.swift */; };
+		4581830E29B0E7DF0075E256 /* KeychainPasswordStore in Frameworks */ = {isa = PBXBuildFile; productRef = 4581830D29B0E7DF0075E256 /* KeychainPasswordStore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		458182EE29AFDE040075E256 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 458182D429AFDE030075E256 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 458182DB29AFDE030075E256;
+			remoteInfo = KeychainPasswordStoreExample;
+		};
+		458182F829AFDE040075E256 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 458182D429AFDE030075E256 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 458182DB29AFDE030075E256;
+			remoteInfo = KeychainPasswordStoreExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		458182DC29AFDE030075E256 /* KeychainPasswordStoreExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeychainPasswordStoreExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		458182DF29AFDE030075E256 /* KeychainPasswordStoreExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainPasswordStoreExampleApp.swift; sourceTree = "<group>"; };
+		458182E329AFDE040075E256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		458182E529AFDE040075E256 /* KeychainPasswordStoreExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeychainPasswordStoreExample.entitlements; sourceTree = "<group>"; };
+		458182E729AFDE040075E256 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		458182ED29AFDE040075E256 /* KeychainPasswordStoreExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeychainPasswordStoreExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		458182F729AFDE040075E256 /* KeychainPasswordStoreExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeychainPasswordStoreExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		458182FB29AFDE040075E256 /* KeychainPasswordStoreExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainPasswordStoreExampleUITests.swift; sourceTree = "<group>"; };
+		458182FD29AFDE040075E256 /* KeychainPasswordStoreExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainPasswordStoreExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4581830A29B0E72C0075E256 /* KeychainPasswordStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainPasswordStoreTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		458182D929AFDE030075E256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4581830E29B0E7DF0075E256 /* KeychainPasswordStore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		458182EA29AFDE040075E256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		458182F429AFDE040075E256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		458182D329AFDE030075E256 = {
+			isa = PBXGroup;
+			children = (
+				458182DE29AFDE030075E256 /* KeychainPasswordStoreExample */,
+				458182F029AFDE040075E256 /* KeychainPasswordStoreExampleTests */,
+				458182FA29AFDE040075E256 /* KeychainPasswordStoreExampleUITests */,
+				458182DD29AFDE030075E256 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		458182DD29AFDE030075E256 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				458182DC29AFDE030075E256 /* KeychainPasswordStoreExample.app */,
+				458182ED29AFDE040075E256 /* KeychainPasswordStoreExampleTests.xctest */,
+				458182F729AFDE040075E256 /* KeychainPasswordStoreExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		458182DE29AFDE030075E256 /* KeychainPasswordStoreExample */ = {
+			isa = PBXGroup;
+			children = (
+				458182DF29AFDE030075E256 /* KeychainPasswordStoreExampleApp.swift */,
+				458182E329AFDE040075E256 /* Assets.xcassets */,
+				458182E529AFDE040075E256 /* KeychainPasswordStoreExample.entitlements */,
+				458182E629AFDE040075E256 /* Preview Content */,
+			);
+			path = KeychainPasswordStoreExample;
+			sourceTree = "<group>";
+		};
+		458182E629AFDE040075E256 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				458182E729AFDE040075E256 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		458182F029AFDE040075E256 /* KeychainPasswordStoreExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				4581830A29B0E72C0075E256 /* KeychainPasswordStoreTests.swift */,
+			);
+			path = KeychainPasswordStoreExampleTests;
+			sourceTree = "<group>";
+		};
+		458182FA29AFDE040075E256 /* KeychainPasswordStoreExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				458182FB29AFDE040075E256 /* KeychainPasswordStoreExampleUITests.swift */,
+				458182FD29AFDE040075E256 /* KeychainPasswordStoreExampleUITestsLaunchTests.swift */,
+			);
+			path = KeychainPasswordStoreExampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		458182DB29AFDE030075E256 /* KeychainPasswordStoreExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4581830129AFDE040075E256 /* Build configuration list for PBXNativeTarget "KeychainPasswordStoreExample" */;
+			buildPhases = (
+				458182D829AFDE030075E256 /* Sources */,
+				458182D929AFDE030075E256 /* Frameworks */,
+				458182DA29AFDE030075E256 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeychainPasswordStoreExample;
+			packageProductDependencies = (
+				4581830D29B0E7DF0075E256 /* KeychainPasswordStore */,
+			);
+			productName = KeychainPasswordStoreExample;
+			productReference = 458182DC29AFDE030075E256 /* KeychainPasswordStoreExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		458182EC29AFDE040075E256 /* KeychainPasswordStoreExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4581830429AFDE040075E256 /* Build configuration list for PBXNativeTarget "KeychainPasswordStoreExampleTests" */;
+			buildPhases = (
+				458182E929AFDE040075E256 /* Sources */,
+				458182EA29AFDE040075E256 /* Frameworks */,
+				458182EB29AFDE040075E256 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				458182EF29AFDE040075E256 /* PBXTargetDependency */,
+			);
+			name = KeychainPasswordStoreExampleTests;
+			productName = KeychainPasswordStoreExampleTests;
+			productReference = 458182ED29AFDE040075E256 /* KeychainPasswordStoreExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		458182F629AFDE040075E256 /* KeychainPasswordStoreExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4581830729AFDE040075E256 /* Build configuration list for PBXNativeTarget "KeychainPasswordStoreExampleUITests" */;
+			buildPhases = (
+				458182F329AFDE040075E256 /* Sources */,
+				458182F429AFDE040075E256 /* Frameworks */,
+				458182F529AFDE040075E256 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				458182F929AFDE040075E256 /* PBXTargetDependency */,
+			);
+			name = KeychainPasswordStoreExampleUITests;
+			productName = KeychainPasswordStoreExampleUITests;
+			productReference = 458182F729AFDE040075E256 /* KeychainPasswordStoreExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		458182D429AFDE030075E256 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					458182DB29AFDE030075E256 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					458182EC29AFDE040075E256 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 458182DB29AFDE030075E256;
+					};
+					458182F629AFDE040075E256 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 458182DB29AFDE030075E256;
+					};
+				};
+			};
+			buildConfigurationList = 458182D729AFDE030075E256 /* Build configuration list for PBXProject "KeychainPasswordStoreExample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 458182D329AFDE030075E256;
+			packageReferences = (
+				4581830C29B0E7DF0075E256 /* XCRemoteSwiftPackageReference "keychain-password-store-ios" */,
+			);
+			productRefGroup = 458182DD29AFDE030075E256 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				458182DB29AFDE030075E256 /* KeychainPasswordStoreExample */,
+				458182EC29AFDE040075E256 /* KeychainPasswordStoreExampleTests */,
+				458182F629AFDE040075E256 /* KeychainPasswordStoreExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		458182DA29AFDE030075E256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				458182E829AFDE040075E256 /* Preview Assets.xcassets in Resources */,
+				458182E429AFDE040075E256 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		458182EB29AFDE040075E256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		458182F529AFDE040075E256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		458182D829AFDE030075E256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				458182E029AFDE030075E256 /* KeychainPasswordStoreExampleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		458182E929AFDE040075E256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4581830B29B0E72C0075E256 /* KeychainPasswordStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		458182F329AFDE040075E256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				458182FE29AFDE040075E256 /* KeychainPasswordStoreExampleUITestsLaunchTests.swift in Sources */,
+				458182FC29AFDE040075E256 /* KeychainPasswordStoreExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		458182EF29AFDE040075E256 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 458182DB29AFDE030075E256 /* KeychainPasswordStoreExample */;
+			targetProxy = 458182EE29AFDE040075E256 /* PBXContainerItemProxy */;
+		};
+		458182F929AFDE040075E256 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 458182DB29AFDE030075E256 /* KeychainPasswordStoreExample */;
+			targetProxy = 458182F829AFDE040075E256 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		458182FF29AFDE040075E256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4581830029AFDE040075E256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4581830229AFDE040075E256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KeychainPasswordStoreExample/KeychainPasswordStoreExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KeychainPasswordStoreExample/Preview Content\"";
+				DEVELOPMENT_TEAM = 9KUXNXY2SY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.levi.KeychainPasswordStoreExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4581830329AFDE040075E256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KeychainPasswordStoreExample/KeychainPasswordStoreExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KeychainPasswordStoreExample/Preview Content\"";
+				DEVELOPMENT_TEAM = 9KUXNXY2SY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.levi.KeychainPasswordStoreExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4581830529AFDE040075E256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9KUXNXY2SY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.levi.KeychainPasswordStoreExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeychainPasswordStoreExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeychainPasswordStoreExample";
+			};
+			name = Debug;
+		};
+		4581830629AFDE040075E256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9KUXNXY2SY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.levi.KeychainPasswordStoreExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeychainPasswordStoreExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeychainPasswordStoreExample";
+			};
+			name = Release;
+		};
+		4581830829AFDE040075E256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9KUXNXY2SY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.levi.KeychainPasswordStoreExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeychainPasswordStoreExample;
+			};
+			name = Debug;
+		};
+		4581830929AFDE040075E256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9KUXNXY2SY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.levi.KeychainPasswordStoreExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeychainPasswordStoreExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		458182D729AFDE030075E256 /* Build configuration list for PBXProject "KeychainPasswordStoreExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				458182FF29AFDE040075E256 /* Debug */,
+				4581830029AFDE040075E256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4581830129AFDE040075E256 /* Build configuration list for PBXNativeTarget "KeychainPasswordStoreExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4581830229AFDE040075E256 /* Debug */,
+				4581830329AFDE040075E256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4581830429AFDE040075E256 /* Build configuration list for PBXNativeTarget "KeychainPasswordStoreExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4581830529AFDE040075E256 /* Debug */,
+				4581830629AFDE040075E256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4581830729AFDE040075E256 /* Build configuration list for PBXNativeTarget "KeychainPasswordStoreExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4581830829AFDE040075E256 /* Debug */,
+				4581830929AFDE040075E256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4581830C29B0E7DF0075E256 /* XCRemoteSwiftPackageReference "keychain-password-store-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CruGlobal/keychain-password-store-ios.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4581830D29B0E7DF0075E256 /* KeychainPasswordStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4581830C29B0E7DF0075E256 /* XCRemoteSwiftPackageReference "keychain-password-store-ios" */;
+			productName = KeychainPasswordStore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 458182D429AFDE030075E256 /* Project object */;
+}

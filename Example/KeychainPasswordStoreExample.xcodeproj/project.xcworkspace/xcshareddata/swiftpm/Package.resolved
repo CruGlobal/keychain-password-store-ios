@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "keychain-password-store-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CruGlobal/keychain-password-store-ios.git",
+      "state" : {
+        "revision" : "86cd292171151f81cc58b59cd24321d2382f1594",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
