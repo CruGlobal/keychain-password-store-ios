@@ -33,4 +33,4 @@ jobs:
           xcode-version: '14.2'
 
       - name: Run Tests
-        run: bundle exec xcodebuild build test -proj Example/KeychainPasswordStoreExample.xcodeproj -scheme KeychainPasswordStoreExample -destination 'platform=iOS Simulator,name=iPhone 14'
+        run: xcodebuild build test -proj Example/KeychainPasswordStoreExample.xcodeproj -scheme KeychainPasswordStoreExample -destination 'platform=iOS Simulator,name=iPhone 14'
