@@ -16,6 +16,18 @@ public enum KeychainPasswordStoreResponse {
     case otherStatus(status: OSStatus)
     case success
     
+    public var isSuccess: Bool {
+        
+        switch self {
+        
+        case .success:
+            return true
+        
+        default:
+            return false
+        }
+    }
+    
     public func getMessage() -> String? {
         
         switch self {
