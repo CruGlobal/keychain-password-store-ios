@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     s.author           = { 'Levi Eggert' => 'levi.eggert@cru.org' }
     s.source           = { :git => 'https://github.com/CruGlobal/keychain-password-store-ios.git', :tag => s.version.to_s }
   
-    s.swift_version = '5.6'
+    s.swift_version = '5.7'
     s.platforms = {
         "ios": "12.0"
     }
