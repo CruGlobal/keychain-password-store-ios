@@ -17,6 +17,7 @@ concurrency:
 
 jobs:
   run_tests_and_code_coverage:
+    name: Run Tests and Code Coverage
     runs-on: macos-14
     steps:
       - name: Checkout code
