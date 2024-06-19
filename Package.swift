@@ -23,6 +23,10 @@ let package = Package(
             name: "KeychainPasswordStore",
             dependencies: [],
             exclude: ["../../Example"]
+        ),
+        .testTarget(
+            name: "KeychainPasswordStoreTests",
+            dependencies: ["KeychainPasswordStore"]
         )
     ]
 )

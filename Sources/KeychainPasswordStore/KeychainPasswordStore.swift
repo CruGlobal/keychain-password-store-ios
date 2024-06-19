@@ -6,7 +6,6 @@
 //  Copyright © 2022 Cru Global, Inc. All rights reserved.
 //
 
-
 import Foundation
 import Security
 
