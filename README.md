@@ -3,11 +3,17 @@ Keychain Password Store
 
 Implements Security Framework for storing passwords in a device keychain.
 
+- [Publishing New Versions With GitHub Actions](#publishing-new-versions-with-github-actions)
+- [Manually Publishing New Versions](#manually-publishing-new-versions)
 
-- [Publishing New Versions](#publishing-new-versions)
+### Publishing New Versions With GitHub Actions
 
+Publishing new versions with GitHub Actions is easy.
 
-### Publishing New Versions
+- Ensure you set a new version in RequestOperation.podspec.  The new version can't already exist as a tag.
+- Create a pull request on main and once merged into main GitHub actions will handle tagging the version and pushing to the CruGlobal specs repo.
+
+### Manually Publishing New Versions
 
 Steps to publish new versions for Cocoapods and Swift Package Manager. 
 
