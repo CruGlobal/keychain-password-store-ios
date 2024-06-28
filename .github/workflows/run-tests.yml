@@ -1,4 +1,3 @@
-
 name: Run Tests
 
 on:
@@ -21,18 +20,17 @@ jobs:
     runs-on: macos-14
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Select Xcode Version
         uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: '15.4.0'
       - name: Run Tests
-        run: xcodebuild build test -project Example/KeychainPasswordStoreExample.xcodeproj -scheme KeychainPasswordStoreExample -destination 'platform=iOS Simulator,name=iPhone 14' -resultBundlePath /Users/runner/Library/Developer/Xcode/KeychainPasswordStore/ResultBundle/keychainPasswordStore_result
+        run: xcodebuild test -scheme KeychainPasswordStore -sdk iphonesimulator17.5 -destination "OS=17.5,name=iPhone 15"
       - name: Upload Xcode Code Coverage Report to CodeCov
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v4
         with:
           fail_ci_if_error: true
           token: ${{ secrets.CODECOV_TOKEN }}
           verbose: true
           xcode: true
-          xcode_archive_path: /Users/runner/Library/Developer/Xcode/KeychainPasswordStore/ResultBundle/keychainPasswordStore_result.xcresult
