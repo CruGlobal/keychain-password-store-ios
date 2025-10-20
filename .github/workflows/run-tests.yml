@@ -1,4 +1,3 @@
-
 name: Run Tests
 
 on:
@@ -7,28 +6,51 @@ on:
   pull_request:
     branches: [ main ]
 
+  workflow_dispatch:
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   run_tests_and_code_coverage:
-    name: Run Tests and Code Coverage
-    runs-on: macos-15
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v5
-      - name: Select Xcode Version
-        uses: maxim-lobanov/setup-xcode@v1
-        with:
-          xcode-version: '26.0.1'
-      - name: Run Tests
-        run: xcodebuild build test -project Example/KeychainPasswordStoreExample.xcodeproj -scheme KeychainPasswordStoreExample -destination 'OS=26.0,name=iPhone 17' -resultBundlePath /Users/runner/Library/Developer/Xcode/KeychainPasswordStore/ResultBundle/keychainPasswordStore_result
-      - name: Upload Xcode Code Coverage Report to CodeCov
-        uses: codecov/codecov-action@v3
-        with:
-          fail_ci_if_error: true
-          token: ${{ secrets.CODECOV_TOKEN }}
-          verbose: true
-          xcode: true
-          xcode_archive_path: /Users/runner/Library/Developer/Xcode/KeychainPasswordStore/ResultBundle/keychainPasswordStore_result.xcresult
+    uses: CruGlobal/godtools-swift/.github/workflows/shared-spm-run-tests.yml@master
+    with:
+      xcodebuild-test-scheme: KeychainPasswordStoreExample
+    secrets:
+      codecov_token: ${{ secrets.CODECOV_TOKEN }}
+
+
+# name: Run Tests
+
+# on:
+#   push:
+#     branches: [ main ]
+#   pull_request:
+#     branches: [ main ]
+
+# concurrency:
+#   group: ${{ github.workflow }}-${{ github.ref }}
+#   cancel-in-progress: true
+
+# jobs:
+#   run_tests_and_code_coverage:
+#     name: Run Tests and Code Coverage
+#     runs-on: macos-15
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v5
+#       - name: Select Xcode Version
+#         uses: maxim-lobanov/setup-xcode@v1
+#         with:
+#           xcode-version: '26.0.1'
+#       - name: Run Tests
+#         run: xcodebuild build test -project Example/KeychainPasswordStoreExample.xcodeproj -scheme KeychainPasswordStoreExample -destination 'OS=26.0,name=iPhone 17' -resultBundlePath /Users/runner/Library/Developer/Xcode/KeychainPasswordStore/ResultBundle/keychainPasswordStore_result
+#       - name: Upload Xcode Code Coverage Report to CodeCov
+#         uses: codecov/codecov-action@v3
+#         with:
+#           fail_ci_if_error: true
+#           token: ${{ secrets.CODECOV_TOKEN }}
+#           verbose: true
+#           xcode: true
+#           xcode_archive_path: /Users/runner/Library/Developer/Xcode/KeychainPasswordStore/ResultBundle/keychainPasswordStore_result.xcresult
