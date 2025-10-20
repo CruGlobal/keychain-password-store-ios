@@ -1,4 +1,3 @@
-
 name: Run Tests
 
 on:
@@ -24,11 +23,23 @@ jobs:
           xcode-version: '26.0.1'
       - name: Run Tests
         run: xcodebuild build test -project Example/KeychainPasswordStoreExample.xcodeproj -scheme KeychainPasswordStoreExample -destination 'OS=26.0,name=iPhone 17' -resultBundlePath /Users/runner/Library/Developer/Xcode/KeychainPasswordStore/ResultBundle/keychainPasswordStore_result
-      - name: Upload Xcode Code Coverage Report to CodeCov
-        uses: codecov/codecov-action@v3
+      - name: Install XCResultParser
+        run: brew install a7ex/homebrew-formulae/xcresultparser
+      - name: Parse XCResult For CodeCov
+        run: xcresultparser -o cobertura /Users/runner/Library/Developer/Xcode/KeychainPasswordStore/ResultBundle/keychainPasswordStore_result.xcresult > /Users/runner/Library/Developer/Xcode/KeychainPasswordStore/ResultBundle/coverage.xml
+      - name: Upload Coverage XML to CodeCov
+        uses: codecov/codecov-action@v5
         with:
-          fail_ci_if_error: true
+          files: /Users/runner/Library/Developer/Xcode/KeychainPasswordStore/ResultBundle/coverage.xml
+          plugin: xcode
           token: ${{ secrets.CODECOV_TOKEN }}
-          verbose: true
-          xcode: true
-          xcode_archive_path: /Users/runner/Library/Developer/Xcode/KeychainPasswordStore/ResultBundle/keychainPasswordStore_result.xcresult
+      
+      
+      # - name: Upload Xcode Code Coverage Report to CodeCov
+      #   uses: codecov/codecov-action@v3
+      #   with:
+      #     fail_ci_if_error: true
+      #     token: ${{ secrets.CODECOV_TOKEN }}
+      #     verbose: true
+      #     xcode: true
+      #     xcode_archive_path: /Users/runner/Library/Developer/Xcode/KeychainPasswordStore/ResultBundle/keychainPasswordStore_result.xcresult
