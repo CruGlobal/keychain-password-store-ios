@@ -22,7 +22,7 @@ jobs:
         with:
           xcode-version: '26.0.1'
       - name: Run Tests
-        run: xcodebuild build test -project Example/KeychainPasswordStoreExample.xcodeproj -scheme KeychainPasswordStoreExample -destination 'OS=26.0,name=iPhone 17' -resultBundlePath /Users/runner/Library/Developer/Xcode/KeychainPasswordStore/ResultBundle/keychainPasswordStore_result
+        run: xcodebuild build test -project Example/KeychainPasswordStoreExample.xcodeproj -scheme KeychainPasswordStoreExample -destination 'OS=26.0.1,name=iPhone 17' -resultBundlePath /Users/runner/Library/Developer/Xcode/KeychainPasswordStore/ResultBundle/keychainPasswordStore_result
       - name: Install XCResultParser
         run: brew install a7ex/homebrew-formulae/xcresultparser
       - name: Parse XCResult For CodeCov
