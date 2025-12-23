@@ -5,27 +5,14 @@
 //  Created by Levi Eggert on 6/6/23.
 //
 
-import XCTest
+import Foundation
+import Testing
 import KeychainPasswordStore
 
-final class KeychainPasswordStoreExampleTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+struct KeychainPasswordStoreExampleTests {
     
-    private func getRandomKeychainStore() -> KeychainPasswordStore {
-        
-        let randomService: String = UUID().uuidString
-        
-        return KeychainPasswordStore(service: randomService)
-    }
-    
-    func testStorePasswordExists() {
+    @Test()
+    func storePasswordExists() {
         
         let keychainStore: KeychainPasswordStore = getRandomKeychainStore()
         
@@ -34,14 +21,15 @@ final class KeychainPasswordStoreExampleTests: XCTestCase {
         
         let storeResponse: KeychainPasswordStoreResponse = keychainStore.storePassword(account: account, password: newPassword, overwriteExisting: true)
         
-        XCTAssertEqual(storeResponse.isSuccess, true)
-        
+        #expect(storeResponse.isSuccess == true)
+                
         let existingPassword: String? = keychainStore.getPassword(account: account)
                 
-        XCTAssertEqual(newPassword, existingPassword)
+        #expect(newPassword == existingPassword)
     }
     
-    func testStorePasswordWithOverwriteFalseIsNotChanged() {
+    @Test()
+    func storePasswordWithOverwriteFalseIsNotChanged() {
         
         let keychainStore: KeychainPasswordStore = getRandomKeychainStore()
         
@@ -51,16 +39,17 @@ final class KeychainPasswordStoreExampleTests: XCTestCase {
         
         _ = keychainStore.storePassword(account: account, password: originalPassword, overwriteExisting: true)
         
-        XCTAssertEqual(originalPassword, keychainStore.getPassword(account: account))
+        #expect(originalPassword == keychainStore.getPassword(account: account))
         
         _ = keychainStore.storePassword(account: account, password: newPassword, overwriteExisting: false)
         
-        XCTAssertNotEqual(newPassword, keychainStore.getPassword(account: account))
+        #expect(newPassword != keychainStore.getPassword(account: account))
         
-        XCTAssertEqual(originalPassword, keychainStore.getPassword(account: account))
+        #expect(originalPassword == keychainStore.getPassword(account: account))
     }
     
-    func testStorePasswordWithOverwriteTrueIsChanged() {
+    @Test()
+    func storePasswordWithOverwriteTrueIsChanged() {
         
         let keychainStore: KeychainPasswordStore = getRandomKeychainStore()
         
@@ -70,16 +59,17 @@ final class KeychainPasswordStoreExampleTests: XCTestCase {
         
         _ = keychainStore.storePassword(account: account, password: originalPassword, overwriteExisting: true)
         
-        XCTAssertEqual(originalPassword, keychainStore.getPassword(account: account))
+        #expect(originalPassword == keychainStore.getPassword(account: account))
         
         _ = keychainStore.storePassword(account: account, password: newPassword, overwriteExisting: true)
         
-        XCTAssertNotEqual(originalPassword, keychainStore.getPassword(account: account))
+        #expect(originalPassword != keychainStore.getPassword(account: account))
         
-        XCTAssertEqual(newPassword, keychainStore.getPassword(account: account))
+        #expect(newPassword == keychainStore.getPassword(account: account))
     }
     
-    func testUpdatePassword() {
+    @Test()
+    func updatePassword() {
         
         let keychainStore: KeychainPasswordStore = getRandomKeychainStore()
         
@@ -89,14 +79,15 @@ final class KeychainPasswordStoreExampleTests: XCTestCase {
         
         _ = keychainStore.storePassword(account: account, password: originalPassword, overwriteExisting: true)
         
-        XCTAssertEqual(originalPassword, keychainStore.getPassword(account: account))
+        #expect(originalPassword == keychainStore.getPassword(account: account))
         
         _ = keychainStore.updatePassword(account: account, password: newPassword)
                 
-        XCTAssertEqual(newPassword, keychainStore.getPassword(account: account))
+        #expect(newPassword == keychainStore.getPassword(account: account))
     }
     
-    func testDeletedPassword() {
+    @Test()
+    func deletedPassword() {
         
         let keychainStore: KeychainPasswordStore = getRandomKeychainStore()
         
@@ -105,10 +96,20 @@ final class KeychainPasswordStoreExampleTests: XCTestCase {
         
         _ = keychainStore.storePassword(account: account, password: password, overwriteExisting: true)
         
-        XCTAssertEqual(password, keychainStore.getPassword(account: account))
+        #expect(password == keychainStore.getPassword(account: account))
         
         _ = keychainStore.deletePassword(account: account)
                 
-        XCTAssertNil(keychainStore.getPassword(account: account))
+        #expect(keychainStore.getPassword(account: account) == nil)
+    }
+}
+
+extension KeychainPasswordStoreExampleTests {
+    
+    private func getRandomKeychainStore() -> KeychainPasswordStore {
+        
+        let randomService: String = UUID().uuidString
+        
+        return KeychainPasswordStore(service: randomService)
     }
 }
