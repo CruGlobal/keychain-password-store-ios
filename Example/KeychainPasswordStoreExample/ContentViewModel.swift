@@ -14,8 +14,8 @@ class ContentViewModel: ObservableObject {
     private let userIdAccount: String = "user_id_account"
     private let userPasswordAccount: String = "user_password_account"
     
-    @Published var userId: String = ""
-    @Published var userPassword: String = ""
+    @Published private(set) var userId: String = ""
+    @Published private(set) var userPassword: String = ""
     
     init() {
         
