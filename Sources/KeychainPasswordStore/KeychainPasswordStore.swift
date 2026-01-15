@@ -9,7 +9,7 @@
 import Foundation
 import Security
 
-public class KeychainPasswordStore {
+public final class KeychainPasswordStore {
     
     private let service: String
     

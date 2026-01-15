@@ -9,7 +9,7 @@
 import Foundation
 import Security
 
-public enum KeychainPasswordStoreResponse {
+public enum KeychainPasswordStoreResponse: Sendable {
     
     case duplicateItem
     case internalError(error: Error)
